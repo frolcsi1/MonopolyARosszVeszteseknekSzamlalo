@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly a rossz veszteseknek</title>
+</head>
+<body>
+    <div class="container">
+        <div class="property hiddenAll all alls brown" id="first_element">
+            <span class="street">
+                PIAC TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls brown"  id="second_element">
+            <span class="street">
+                TÖRÖK UDVAR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls lightblue"  id="third_element">
+            <span class="street">
+                NAGYKŐRÖSI ÚT
+            </span>
+        </div>
+        <div class="property hiddenAll all alls lightblue"  id="fourth_element">
+            <span class="street">
+                LESTÁR TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls lightblue"  id="fifth_element">
+            <span class="street">
+                KISFALUDY ÚT
+            </span>
+        </div>
+        <div class="property hiddenAll all alls pink"  id="sixth_element">
+            <span class="street">
+                EGYETEM UTCA
+            </span>
+        </div>
+        <div class="property hiddenAll all alls pink"  id="seventh_element">
+            <span class="street">
+                SZÍNHÁZ TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls pink"  id="eighth_element">
+            <span class="street">
+                JANUS PANNONIUS ÚT
+            </span>
+        </div>
+        <div class="property hiddenAll all alls orange"  id="ninth_element">
+            <span class="street">
+                PETŐFI TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls orange"  id="tenth_element">
+            <span class="street">
+                NAGYERDŐ
+            </span>
+        </div>
+        <div class="property hiddenAll all alls orange"  id="eleventh_element">
+            <span class="street">
+                BETHLEN UTCA
+            </span>
+        </div>
+        <div class="property hiddenAll all alls red"  id="twelfth_element">
+            <span class="street">
+                MÓRA PARK
+            </span>
+        </div>
+        <div class="property hiddenAll all alls red"  id="thirteenth_element">
+            <span class="street">
+                OSKOLA UTCA
+            </span>
+        </div>
+        <div class="property hiddenAll all alls red"  id="fourteenth_element">
+            <span class="street">
+                DÓM TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls yellow"  id="fifteenth_element">
+            <span class="street">
+                DOBÓ TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls yellow"  id="sixteenth_element">
+            <span class="street">
+                ALMAGYAR UTCA
+            </span>
+        </div>
+        <div class="property hiddenAll all alls yellow"  id="seventeenth_element">
+            <span class="street">
+                GÁRDONYI ÚT
+            </span>
+        </div>
+        <div class="property hiddenAll all alls green"  id="eighteenth_element">
+            <span class="street">
+                KŐFARAGÓ TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls green"  id="nineteenth_element">
+            <span class="street">
+                ÓVÁROS
+            </span>
+        </div>
+        <div class="property hiddenAll all alls green"  id="twentieth_element">
+            <span class="street">
+                ÖTVÖS UTCA
+            </span>
+        </div>
+        <div class="property hiddenAll all alls darkblue"  id="twenty-first_element">
+            <span class="street">
+                VÖRÖSMARTY TÉR
+            </span>
+        </div>
+        <div class="property hiddenAll all alls darkblue"  id="twenty-second_element">
+            <span class="street">
+                DUNAKORZÓ
+            </span>
+        </div>
+        <div class="property hiddenAll all alls train"  id="twenty-third_element">
+            <span class="street">
+                VASÚTVONAL
+            </span>
+        </div>
+    </div>
+
+    <div class="all alls players hidden">
+        <div id="playerName" class="container2">
+            <h3 id="actualPlayer">Jelenlegi játékos:</h3>
+            <h4 id="actualMoney">0 Monopoly</h4>
+            <button id="nextPlayer" class="nextPlayer">Következő játékos</button>
+            <button id="back" class="back hidden">Vissza</button>
+        </div>
+    </div>
+
+    <div class="dialogue1">
+        <form>
+            <h3 id="playersNumber">Hány játékos játszott?</h3>
+            <h3 id="playersName" class="hidden">Hogy hívnak?</h3>
+            <h3 id="playersMoney" class="hidden">Mennyi pénzed van?</h3>
+            <input id="playersNumberInput" type="number" min="1" step="1">
+            <input id="playersNameInput" class="hidden" type="text">
+            <input id="playersMoneyInput" class="hidden" type="number" min="1" step="1">
+            <button id="playersNumberButton">Küldés</button>
+            <button id="playersNameButton" class="hidden">Küldés</button>
+            <button id="playersMoneyButton" class="hidden">Küldés</button>
+        </form>
+
+    </div>
+
+    <div class="dialogue2 hidden">
+        <form id="form" class="form">
+            <h3>Válaszd ki, hogy melyik igaz az ingatlanodra!</h3>
+            <select id="selector">
+                <option value="a">Alap (színszett és ház nélkül)</option>
+                <option value="s">Színszett (ház nélkül)</option>
+                <option value="1">1 ház</option>
+                <option value="2">2 ház</option>
+                <option value="3">3 ház</option>
+                <option value="4">4 ház</option>
+                <option value="5">1 hotel</option>
+                <option value="b">Vissza</option>
+            </select>
+            <button id="button">Oké</button>
+        </form>
+    </div>
+
+    <div class="dialogue3 hidden">
+        <form id="form3" class="form">
+            <h3>Válaszd ki, hogy melyik vasútvonal van a birtokodban!</h3>
+            <label id="É"><input type="checkbox" name="option" value="É">ÉSZAKI VASÚTVONAL</label><br>
+            <label id="K"><input type="checkbox" name="option" value="K">KELETI VASÚTVONAL</label><br>
+            <label id="D"><input type="checkbox" name="option" value="D">DÉLI VASÚTVONAL</label><br>
+            <label id="Ny"><input type="checkbox" name="option" value="Ny">NYUGATI VASÚTVONAL</label><br>
+            <button id="trainLineButton">Oké</button>
+        </form>
+    </div>
+
+    <div class="hiddenAll helpQuestionMark all">
+        <span id="helpQuestionMark">?</span>
+    </div>
+
+    <div class="helpSelector hidden" id="form2">
+        <form>
+            <h3>Válaszd ki, hogy mit szeretnél csinálni!</h3>
+            <select id="helpSelector">
+                <option value="plus">Kihagytam egy igatlant/igatlanokat</option>
+                <option value="minus">Rossz ingatlant vettem</option>
+                <option value="other">Más hiba</option>
+                <option value="back">Vissza</option>
+            </select>
+        </form>
+        <button id="helpButton">Oké</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
